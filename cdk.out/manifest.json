@@ -1,0 +1,263 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "AwsTsCdkRestApiStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "AwsTsCdkRestApiStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "AwsTsCdkRestApiStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AwsTsCdkRestApiStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/1374d6e1bddb2272cbe513eb40031980a39d3b529d24db8da596604c30328779.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "AwsTsCdkRestApiStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "AwsTsCdkRestApiStack.assets"
+      ],
+      "metadata": {
+        "/AwsTsCdkRestApiStack/DbTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DbTableED196C5F"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPI1CC12F26"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIDeploymentD35A5380e925e517b89bfdb0d5c787118d464f26"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIDeploymentStageprod21CF62B9"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIEndpointB14C3C54"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIOPTIONS3271A002"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIposts4CB109FB"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsOPTIONS67FB1E0E"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsid76FD763E"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/{id}/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsidOPTIONSBE1D451A"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/{id}/GET/ApiPermission.AwsTsCdkRestApiStackRestAPID03B65A4.GET..posts.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsidGETApiPermissionAwsTsCdkRestApiStackRestAPID03B65A4GETpostsid8899C178"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/{id}/GET/ApiPermission.Test.AwsTsCdkRestApiStackRestAPID03B65A4.GET..posts.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsidGETApiPermissionTestAwsTsCdkRestApiStackRestAPID03B65A4GETpostsid96072CB2"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/{id}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsidGET88D2B568"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/{id}/DELETE/ApiPermission.AwsTsCdkRestApiStackRestAPID03B65A4.DELETE..posts.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsidDELETEApiPermissionAwsTsCdkRestApiStackRestAPID03B65A4DELETEpostsidA6E915B0"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/{id}/DELETE/ApiPermission.Test.AwsTsCdkRestApiStackRestAPID03B65A4.DELETE..posts.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsidDELETEApiPermissionTestAwsTsCdkRestApiStackRestAPID03B65A4DELETEpostsidC2770BD6"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/{id}/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsidDELETEEB791267"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/GET/ApiPermission.AwsTsCdkRestApiStackRestAPID03B65A4.GET..posts": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsGETApiPermissionAwsTsCdkRestApiStackRestAPID03B65A4GETposts66764A36"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/GET/ApiPermission.Test.AwsTsCdkRestApiStackRestAPID03B65A4.GET..posts": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsGETApiPermissionTestAwsTsCdkRestApiStackRestAPID03B65A4GETpostsB204823B"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsGET40CAAA74"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/POST/ApiPermission.AwsTsCdkRestApiStackRestAPID03B65A4.POST..posts": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsPOSTApiPermissionAwsTsCdkRestApiStackRestAPID03B65A4POSTposts25FB3178"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/POST/ApiPermission.Test.AwsTsCdkRestApiStackRestAPID03B65A4.POST..posts": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsPOSTApiPermissionTestAwsTsCdkRestApiStackRestAPID03B65A4POSTpostsE346F793"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/RestAPI/Default/posts/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestAPIpostsPOST92153FA9"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/ApiKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiKeyF9DDEE66"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/UsagePlan/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UsagePlanC18B28F1"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/UsagePlan/UsagePlanKeyResource:AwsTsCdkRestApiStackApiKey3599524D": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UsagePlanUsagePlanKeyResourceAwsTsCdkRestApiStackApiKey3599524D336027E5"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/PostsLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostsLambdaServiceRoleF94306D3"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/PostsLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostsLambdaServiceRoleDefaultPolicy75DD134B"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/PostsLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostsLambda6B0B056B"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/PostLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostLambdaServiceRole1CD56985"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/PostLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostLambdaServiceRoleDefaultPolicy1E8FF5CA"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/PostLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostLambda0EF1C7F9"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/API Key ID": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIKeyID"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/AwsTsCdkRestApiStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "AwsTsCdkRestApiStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

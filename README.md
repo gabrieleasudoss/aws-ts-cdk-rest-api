@@ -1,6 +1,6 @@
-# To create and test a REST API using AWS API Gateway, Lambda, and DynamoDB with the AWS CDK
-To develop a REST API with API key authentication using AWS API Gateway, DynamoDB, Lambda, and the AWS CDK as well as how to test it with Postman.
+# To implement and test a REST API with AWS API Gateway, Lambda, and DynamoDB with the AWS CDK using TypeScript
 
+To implement a REST API with API key authentication using AWS API Gateway, DynamoDB, Lambda, and the AWS CDK using TypeScript as well as how to test it with Postman.
 
 ## Overview
 

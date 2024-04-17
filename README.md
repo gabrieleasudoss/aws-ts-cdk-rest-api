@@ -517,6 +517,14 @@ Once you have the API key value, you can test your new REST API using a tool lik
 
 When testing the creation of a new post, pass the data you want to create the post with to the body of the request. Use the `raw` option for the body and format the data as a JSON object.
 
+### /POST API in Postman
+
+![alt text](images/Screenshot_3.png)
+
+### /GET API in Postman
+
+![alt text](images/Screenshot_4.png)
+
 ## Closing Thoughts
 
 If all your tests have produced the expected responses, congratulations on successfully building and deploying a functional REST API using API Gateway, Lambda, DynamoDB, and the AWS CDK, and testing it with Postman!
